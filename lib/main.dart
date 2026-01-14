@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_deep/common/index.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -32,7 +33,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+
+      // 路由
+      initialRoute: RouteNames.systemLogin,
+      getPages: RoutePages.list,
     );
   }
 }
