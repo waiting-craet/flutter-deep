@@ -145,6 +145,7 @@ class RoutePages {
       name: RouteNames.stylesRadioGroup,
       page: () => const RadioGroupPage(),
     ),
+    //样式
     GetPage(
       name: RouteNames.stylesStylesIndex,
       page: () => const StylesIndexPage(),
