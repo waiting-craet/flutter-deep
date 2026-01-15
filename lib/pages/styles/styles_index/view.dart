@@ -3,6 +3,7 @@ import 'package:flutter_deep/common/i18n/locale_keys.dart';
 import 'package:flutter_deep/common/services/config.dart';
 import 'package:get/get.dart';
 
+import '../../../common/index.dart';
 import 'index.dart';
 
 class StylesIndexPage extends GetView<StylesIndexController> {
@@ -11,6 +12,11 @@ class StylesIndexPage extends GetView<StylesIndexController> {
   // 主视图
   Widget _buildView() {
     return Column(children: [
+      // 文本
+      ListTile(
+        onTap: () => Get.toNamed(RouteNames.stylesText),
+        title: const Text("Text 文本"),
+      ),
       //语言
       ListTile(
         onTap: controller.onLanguageSelected,

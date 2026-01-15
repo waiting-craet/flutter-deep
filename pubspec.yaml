@@ -41,15 +41,17 @@ dependencies:
 
   # 状态管理
   get: ^4.7.3
-
-#获取包信息
+  #界面核心包
+  ducafe_ui_core: ^1.0.6
+  #获取包信息
   package_info_plus: ^8.0.0
-# 本地kv存储
+  # 本地kv存储
   shared_preferences: ^2.5.3
   #网络请求
   dio: ^5.9.0
   #主题
   adaptive_theme: ^3.6.0
+  
 
 dev_dependencies:
   flutter_test:
