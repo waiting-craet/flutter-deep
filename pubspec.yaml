@@ -48,6 +48,8 @@ dependencies:
   shared_preferences: ^2.5.3
   #网络请求
   dio: ^5.9.0
+  #主题
+  adaptive_theme: ^3.6.0
 
 dev_dependencies:
   flutter_test:
