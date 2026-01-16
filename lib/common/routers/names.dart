@@ -22,7 +22,7 @@ class RouteNames {
   static const stylesAppbar = '/styles_appbar';
   static const stylesAvatar = '/styles_avatar';
   static const stylesBottomSheet = '/styles_bottom_sheet';
-  static const stylesButton = '/styles_button';
+  static const stylesButton = '/styles_Button';
   static const stylesCard = '/styles_card';
   static const stylesCheckbox = '/styles_checkbox';
   static const stylesColors = '/styles_colors';

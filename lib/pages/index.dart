@@ -19,7 +19,7 @@ export 'search/search_filter/index.dart';
 export 'search/search_index/index.dart';
 export 'styles/appbar/index.dart';
 export 'styles/avatar/index.dart';
-export 'styles/bottom_sheet/index.dart';
+export 'styles/Bottom_sheet/index.dart';
 export 'styles/button/index.dart';
 export 'styles/card/index.dart';
 export 'styles/checkbox/index.dart';

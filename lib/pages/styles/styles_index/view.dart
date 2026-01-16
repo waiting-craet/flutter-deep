@@ -27,6 +27,16 @@ class StylesIndexPage extends GetView<StylesIndexController> {
         onTap: () => Get.toNamed(RouteNames.stylesIcon),
         title: const Text("Icon 图标"),
       ),
+      // Button 按钮
+      ListTile(
+        onTap: () => Get.toNamed(RouteNames.stylesButton),
+        title: const Text("Button 按钮"),
+      ),
+      // Input 输入框
+      ListTile(
+        onTap: () => Get.toNamed(RouteNames.stylesInput),
+        title: const Text("Input 输入框"),
+      ),
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

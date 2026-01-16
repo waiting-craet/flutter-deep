@@ -1,6 +1,9 @@
+import 'package:ducafe_ui_core/ducafe_ui_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_deep/common/index.dart';
 import 'package:get/get.dart';
 
+import '../../../common/style/space.dart';
 import 'index.dart';
 
 class InputPage extends GetView<InputController> {
@@ -8,9 +11,29 @@ class InputPage extends GetView<InputController> {
 
   // 主视图
   Widget _buildView() {
-    return const Center(
-      child: Text("InputPage"),
-    );
+    return <Widget>[
+      // 标准
+      InputWidget(
+        controller: controller.emailController,
+        placeholder: "Email",
+      ),
+
+      // 图标
+      const InputWidget(
+        placeholder: "username",
+        prefix: Icon(Icons.person),
+        suffix: Icon(Icons.done),
+      ),
+
+      // 密码
+      const InputWidget(
+        placeholder: "password",
+        prefix: Icon(Icons.password),
+        obscureText: true,
+      ),
+
+      // end
+    ].toColumnSpace().center().paddingAll(AppSpace.page);
   }
 
   @override
