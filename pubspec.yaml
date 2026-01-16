@@ -51,6 +51,10 @@ dependencies:
   dio: ^5.9.0
   #主题
   adaptive_theme: ^3.6.0
+  # 缓存网络图片
+  cached_network_image: ^3.4.1
+  # svg 图片支持
+  flutter_svg: ^2.1.0
   
 
 dev_dependencies:
