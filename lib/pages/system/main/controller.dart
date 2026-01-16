@@ -20,6 +20,8 @@ class MainController extends GetxController {
   void onReady() {
     super.onReady();
     _initData();
+
+    // 跳转注册页
     Get.toNamed(RouteNames.systemRegister);
   }
 

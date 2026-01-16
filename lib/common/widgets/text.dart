@@ -2,8 +2,6 @@ import 'package:ducafe_ui_core/ducafe_ui_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deep/common/style/scale.dart';
 
-import '../index.dart';
-
 // 排版类型
 enum TextWidgetType {
   h1,

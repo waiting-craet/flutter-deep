@@ -57,6 +57,10 @@ dependencies:
   flutter_svg: ^2.1.0
   # 轮播图
   carousel_slider: ^5.1.1
+  # 表单验证
+  validatorless: ^1.2.5
+  #验证码输入框
+  pinput: ^6.0.1
   
 
 dev_dependencies:

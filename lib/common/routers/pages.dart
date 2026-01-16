@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter_deep/pages/index.dart';
 import 'package:get/get.dart';
 

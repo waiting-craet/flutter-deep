@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_deep/common/i18n/locale_keys.dart';
-import 'package:flutter_deep/common/services/config.dart';
 import 'package:get/get.dart';
 
 import '../../../common/index.dart';

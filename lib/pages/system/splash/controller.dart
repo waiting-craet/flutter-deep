@@ -27,7 +27,7 @@ class SplashController extends GetxController {
     });
   }
 
-  _initData() {
+  initData() {
     update(["splash"]);
   }
 
@@ -39,8 +39,8 @@ class SplashController extends GetxController {
   @override
   void onReady() {
     super.onReady();
-    // _initData(); // 初始数据
-    // _jumpToPage(); // 跳转界面
+    initData(); // 初始数据
+    _jumpToPage(); // 跳转界面
   }
 
   // @override
