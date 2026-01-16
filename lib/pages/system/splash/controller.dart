@@ -40,7 +40,7 @@ class SplashController extends GetxController {
   void onReady() {
     super.onReady();
     // _initData(); // 初始数据
-    _jumpToPage(); // 跳转界面
+    // _jumpToPage(); // 跳转界面
   }
 
   // @override
