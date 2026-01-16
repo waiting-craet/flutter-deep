@@ -58,8 +58,6 @@ class WelcomeController extends GetxController {
     carouselController.nextPage();
   }
 
-  void onTap() {}
-
   // @override
   // void onInit() {
   //   super.onInit();
@@ -68,6 +66,11 @@ class WelcomeController extends GetxController {
   @override
   void onReady() {
     super.onReady();
+
+    // 设置已打开
+    ConfigService().setAlreadyOpen();
+
+    // 初始化数据
     _initData();
   }
 
