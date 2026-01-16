@@ -192,5 +192,9 @@ class RoutePages {
       name: RouteNames.systemWelcome,
       page: () => const WelcomePage(),
     ),
+    GetPage(
+      name: RouteNames.stylesTextForm,
+      page: () => const TextFormPage(),
+    ),
   ];
 }
