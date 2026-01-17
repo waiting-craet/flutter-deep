@@ -2,6 +2,7 @@ import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:ducafe_ui_core/ducafe_ui_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_deep/common/index.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 
 import 'global.dart';
@@ -50,13 +51,15 @@ class MyApp extends StatelessWidget {
 
           // builder
           builder: (context, widget) {
-            // 不随系统字体缩放比例
-            return MediaQuery(
-              data: MediaQuery.of(context)
-                  .copyWith(textScaler: const TextScaler.linear(1.0)),
-              child: widget!,
-            );
-          },
+            widget =  EasyLoading.init()(context, widget); // EasyLoading 初始化
+
+           // 不随系统字体缩放比例
+        return MediaQuery(
+          data: MediaQuery.of(context)
+              .copyWith(textScaler: const TextScaler.linear(1.0)),
+          child: widget,
+        );
+      },
 
           // 隐藏 debug 标志
           debugShowCheckedModeBanner: false,

@@ -61,6 +61,8 @@ dependencies:
   validatorless: ^1.2.5
   #验证码输入框
   pinput: ^6.0.1
+  # 加载动画
+  flutter_easyloading: ^3.0.5
   
 
 dev_dependencies:

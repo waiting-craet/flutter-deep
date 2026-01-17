@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_deep/common/utils/loading.dart';
 import 'package:get/get.dart';
 
 import 'common/index.dart';
@@ -11,6 +12,9 @@ class Global {
 
     // 工具类
     await Storage().init();
+
+    //加载动画
+    Loading();
 
     // 初始化服务
     Get.put<ConfigService>(ConfigService());
