@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_deep/common/index.dart';
 import 'package:get/get.dart';
 
 class RegisterController extends GetxController {
@@ -31,8 +32,23 @@ class RegisterController extends GetxController {
   // 注册
   void onSignUp() {
     if ((formKey.currentState as FormState).validate()) {
-      // 验证通过提交数据
-      print("验证通过");
+      // aes 加密密码
+      var password = EncryptUtil().aesEncode(passwordController.text);
+      //var password = passwordController.text;
+
+      //验证通过
+      Get.offNamed(
+        RouteNames.systemRegisterPin,
+        arguments: UserRegisterReq(
+          username: userNameController.text,
+          email: emailController.text,
+          firstName: firstNameController.text,
+          lastName: lastNameController.text,
+          password: password,
+        ),
+      );
+      // // 验证通过提交数据
+      // Get.toNamed(RouteNames.systemRegisterPin);
     }
   }
 

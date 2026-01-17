@@ -7,4 +7,8 @@ class Constants {
   static const storageLanguageCode = 'language_code'; //多语言
 
   static const storageAlreadyOpen = 'already_open'; // 首次打开
+
+  // AES
+  static const aesKey = 'aH5aH5bG0dC6aA3oN0cK4aU5jU6aK2lN';
+  static const aesIV = 'hK6eB4aE1aF3gH5q';
 }
